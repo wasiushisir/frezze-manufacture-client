@@ -1,0 +1,63 @@
+[
+    {
+        "_id":"1",
+        "name":"brassHinge",
+        "img":"https://i.ibb.co/BBKV7k4/pan-type-brass-hinge-500x500.jpg",
+        "shortDescription":"Excellent",
+        "minimumOrder":"29",
+        "quantity":"50",
+        "availableQuantity":"21",
+        "price":"500"
+
+    },
+    {    "_id":"2",
+        "name":"FanMotor",
+        "img":"https://i.ibb.co/TK8K95G/4680jb1030f-refrigerator-fan-motor-pin-connector-500x500-1.jpg",
+        "shortDescription":"",
+        "minimumOrder":"29",
+        "quantity":"50",
+        "availableQuantity":"21",
+        "price":"500"
+
+    },
+    {   "_id":"3",
+        "name":"compressor",
+        "img":"https://i.ibb.co/6YTPnnr/compressor-drain-tray-500x500.jpg",
+        "shortDescription":"",
+        "minimumOrder":"29",
+        "quantity":"50",
+        "availableQuantity":"21",
+        "price":"400"
+
+    },
+    {    "_id":"4",
+        "name":"prod",
+        "img":"https://i.ibb.co/Kq5ScVV/prod-20220417-1847189166473771198852605-jpg-500x500-1.jpg",
+        "shortDescription":"",
+        "minimumOrder":"29",
+        "quantity":"50",
+        "availableQuantity":"21",
+        "price":"250"
+
+    },
+    {    "_id":"5",
+        "name":"Fan",
+        "img":"https://i.ibb.co/TK8K95G/4680jb1030f-refrigerator-fan-motor-pin-connector-500x500-1.jpg",
+        "shortDescription":"",
+        "minimumOrder":"29",
+        "quantity":"50",
+        "availableQuantity":"21",
+        "price":"700"
+
+    },
+    {    "_id":"6",
+        "name":"Fan",
+        "img":"https://i.ibb.co/TK8K95G/4680jb1030f-refrigerator-fan-motor-pin-connector-500x500-1.jpg",
+        "shortDescription":"",
+        "minimumOrder":"29",
+        "quantity":"50",
+        "availableQuantity":"21",
+        "price":"800"
+
+    }
+]
