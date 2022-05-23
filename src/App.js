@@ -8,6 +8,8 @@ import SignUp from './components/SignUp';
 import SignOut from './components/SignOut';
 import Purchase from './components/Purchase';
 import RequireAuth from './components/RequireAuth';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         <Route path='/purchase/:id' element={<RequireAuth><Purchase></Purchase></RequireAuth>}></Route>
 
       </Routes>
+
+      <ToastContainer />
       
      
     </div>

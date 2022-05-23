@@ -6,6 +6,15 @@ import auth from './Home/firebase.init';
 const RequireAuth = ({children}) => {
     const [user, loading, error] = useAuthState(auth);
     const location=useLocation();
+
+    if( loading){
+
+      
+           return <progress class="progress w-96"></progress>
+       
+    }
+
+
     if(!user){
         return <Navigate to="/login" state={{ from: location }} replace />;
     }
