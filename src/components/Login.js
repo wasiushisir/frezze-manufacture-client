@@ -3,12 +3,13 @@ import { useForm } from "react-hook-form";
 import image from '../img/gggoogle (1).png'
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from './Home/firebase.init';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import useToken from '../hooks/useToken';
 
 
 const Login = () => {
     const navigate=useNavigate();
+    const location=useLocation();
    
     const [
         signInWithEmailAndPassword,
@@ -25,17 +26,23 @@ const Login = () => {
     
     
     };
+    const from = location.state?.from?.pathname || "/";
 
     if(gUser||user){
         console.log(gUser||user);
     }
     const[token]=useToken(user||gUser)
 
-   if(token)
-   {
-       navigate('/')
-    
-   }
+  useEffect(()=>{
+    if(token)
+    {
+        navigate(from, { replace: true });
+     
+    }
+
+
+
+  },[token,from,navigate])
 
 
     return (
