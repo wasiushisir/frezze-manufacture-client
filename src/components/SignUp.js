@@ -2,11 +2,13 @@ import React from 'react';
 import image from '../img/gggoogle (1).png'
 import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from './Home/firebase.init';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import useToken from '../hooks/useToken';
 
 const SignUp = () => {
+    const navigate=useNavigate();
     const [
         createUserWithEmailAndPassword,
         user,
@@ -25,6 +27,15 @@ const SignUp = () => {
     {
         console.log(user);
     }
+
+    const token=useToken(user||gUser)
+
+    if(token){
+        navigate('/')
+
+    }
+
+
     return (
         <div className='flex justify-center items-center h-screen'>
             <div class="card w-96 bg-base-100 shadow-xl">

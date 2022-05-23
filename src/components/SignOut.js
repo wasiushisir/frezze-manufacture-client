@@ -8,7 +8,11 @@ const SignOut = () => {
     const [user, loading, error] = useAuthState(auth);
     const navigate=useNavigate();
     signOut(auth);
+   
     if(!user){
+       
+        
+       
         navigate('/')
 
     }

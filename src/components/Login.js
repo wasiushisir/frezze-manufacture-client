@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useForm } from "react-hook-form";
 import image from '../img/gggoogle (1).png'
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from './Home/firebase.init';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import useToken from '../hooks/useToken';
 
 
 const Login = () => {
+    const navigate=useNavigate();
+   
     const [
         signInWithEmailAndPassword,
         user,
@@ -26,6 +29,13 @@ const Login = () => {
     if(gUser||user){
         console.log(gUser||user);
     }
+    const[token]=useToken(user||gUser)
+
+   if(token)
+   {
+       navigate('/')
+    
+   }
 
 
     return (

@@ -1,22 +1,35 @@
 import React from 'react';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
 
 const Tool = ({tool}) => {
+  const naviagte=useNavigate();
     // console.log(tool);
-    const{img,name,shortDescription,minimumOrder,quantity,availableQuantity,price}=tool
+    const{img,name,shortDescription,minimumOrder,quantity,availableQuantity,price,_id}=tool
+
+    const handleBuy=(id)=>{
+     naviagte(`/purchase/${id}`)
+     
+
+    }
+
+
+
     return (
         <div class="card w-96 bg-base-100 shadow-xl sm:text-center">
   <figure class="px-10 pt-10">
     <img src={img} alt="Shoes" class="rounded-xl" />
   </figure>
   <div class="card-body items-center text-center bg-base-200">
-    <h2 class="card-title">{name}</h2>
-    <p><b>Description</b>{shortDescription}</p>
+    <h2 class=" my-0"><b>Name:</b>{name}</h2>
+    {/* <p className='my-0'><b>Description</b>{shortDescription}</p> */}
+   
     <h4><b>MinimumOrder</b>{minimumOrder}</h4>
     <h4><b>quantity</b>{quantity}</h4>
     <h4><b>availableQuantity</b>{availableQuantity}</h4>
     <h4><b>Price</b>{price}</h4>
+    <p><b>Description:</b>{shortDescription}</p>
     <div class="card-actions">
-      <button class="btn btn-primary">Buy Now</button>
+      <button onClick={()=>handleBuy(_id)} class="btn btn-primary">Buy Now</button>
     </div>
   </div>
 </div>

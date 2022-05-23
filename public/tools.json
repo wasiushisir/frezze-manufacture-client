@@ -1,63 +1,63 @@
 [
     {
-        "_id":"1",
+        
         "name":"brassHinge",
-        "img":"https://i.ibb.co/BBKV7k4/pan-type-brass-hinge-500x500.jpg",
+        "img":"https://i.ibb.co/5Gvjh7Y/51d18mt-POf-L-AC-UL320-1.jpg",
         "shortDescription":"Excellent",
-        "minimumOrder":"29",
-        "quantity":"50",
-        "availableQuantity":"21",
-        "price":"500"
+        "minimumOrder":"250",
+        "quantity":"350",
+        "availableQuantity":"400",
+        "price":"5000"
 
     },
-    {    "_id":"2",
+    {    
         "name":"FanMotor",
-        "img":"https://i.ibb.co/TK8K95G/4680jb1030f-refrigerator-fan-motor-pin-connector-500x500-1.jpg",
-        "shortDescription":"",
-        "minimumOrder":"29",
-        "quantity":"50",
-        "availableQuantity":"21",
-        "price":"500"
+        "img":"https://i.ibb.co/QQqC99Y/pan-type-brass-hinge-500x500-1.jpg",
+        "shortDescription":"Excellent",
+        "minimumOrder":"160",
+        "quantity":"300",
+        "availableQuantity":"350",
+        "price":"4000"
 
     },
-    {   "_id":"3",
+    {   
         "name":"compressor",
-        "img":"https://i.ibb.co/6YTPnnr/compressor-drain-tray-500x500.jpg",
-        "shortDescription":"",
-        "minimumOrder":"29",
-        "quantity":"50",
-        "availableQuantity":"21",
-        "price":"400"
+        "img":"https://i.ibb.co/c2C8Hdv/4680jb1030f-refrigerator-fan-motor-pin-connector-500x500-1-1.jpg",
+        "shortDescription":"excellent",
+        "minimumOrder":"290",
+        "quantity":"500",
+        "availableQuantity":"550",
+        "price":"6000"
 
     },
-    {    "_id":"4",
+    {   
         "name":"prod",
         "img":"https://i.ibb.co/Kq5ScVV/prod-20220417-1847189166473771198852605-jpg-500x500-1.jpg",
-        "shortDescription":"",
-        "minimumOrder":"29",
-        "quantity":"50",
-        "availableQuantity":"21",
-        "price":"250"
+        "shortDescription":"Excellent",
+        "minimumOrder":"50",
+        "quantity":"100",
+        "availableQuantity":"250",
+        "price":"25000"
 
     },
-    {    "_id":"5",
-        "name":"Fan",
-        "img":"https://i.ibb.co/TK8K95G/4680jb1030f-refrigerator-fan-motor-pin-connector-500x500-1.jpg",
-        "shortDescription":"",
-        "minimumOrder":"29",
-        "quantity":"50",
-        "availableQuantity":"21",
-        "price":"700"
+    {    
+        "name":"Fan mottor",
+        "img":"https://i.ibb.co/C5x3zZj/compressor-drain-tray-500x500-1.jpg",
+        "shortDescription":"Excellent",
+        "minimumOrder":"1000",
+        "quantity":"300",
+        "availableQuantity":"600",
+        "price":"7400"
 
     },
-    {    "_id":"6",
-        "name":"Fan",
-        "img":"https://i.ibb.co/TK8K95G/4680jb1030f-refrigerator-fan-motor-pin-connector-500x500-1.jpg",
-        "shortDescription":"",
-        "minimumOrder":"29",
-        "quantity":"50",
-        "availableQuantity":"21",
-        "price":"800"
+    {   
+        "name":"stanner with mash",
+        "img":"https://i.ibb.co/dBwbMg9/staner-with-mash-500x500-1-1.jpg",
+        "shortDescription":"Excellent",
+        "minimumOrder":"500",
+        "quantity":"550",
+        "availableQuantity":"700",
+        "price":"8000"
 
     }
 ]
