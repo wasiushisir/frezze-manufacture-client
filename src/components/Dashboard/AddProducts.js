@@ -63,7 +63,7 @@ const AddProducts = () => {
                                 <span class="label-text">Name</span>
 
                             </label>
-                            <input type="text" ref={nameRef} placeholder="Type here" class="input input-bordered input-primary w-72"  />
+                            <input type="text" ref={nameRef} placeholder="Type here" class="input input-bordered input-primary w-72" required  />
 
                         </div>
 
@@ -74,7 +74,7 @@ const AddProducts = () => {
                                 <span class="label-text">Minimum Order</span>
 
                             </label>
-                            <input type="number" ref={minimumRef} placeholder="Type here" class="input input-bordered input-primary w-full max-w-xs"  />
+                            <input type="number" ref={minimumRef} placeholder="Type here" class="input input-bordered input-primary w-full max-w-xs" required />
 
                         </div>
 
@@ -84,7 +84,7 @@ const AddProducts = () => {
                                 <span class="label-text">Quantity</span>
 
                             </label>
-                            <input type="number" ref={quantityRef} placeholder="Type here" class="input input-bordered input-primary w-full max-w-xs"  />
+                            <input type="number" ref={quantityRef} placeholder="Type here" class="input input-bordered input-primary w-full max-w-xs" required />
 
                         </div>
 
@@ -94,7 +94,7 @@ const AddProducts = () => {
                                 <span class="label-text">Available Quantity</span>
 
                             </label>
-                            <input type="number" ref={availRef} placeholder="Type here" class="input input-bordered input-primary w-full max-w-xs"  />
+                            <input type="number" ref={availRef} placeholder="Type here" class="input input-bordered input-primary w-full max-w-xs" required  />
 
                         </div>
 
@@ -104,7 +104,7 @@ const AddProducts = () => {
                                 <span class="label-text">Price</span>
 
                             </label>
-                            <input type="number" ref={priceRef} placeholder="Type here" class="input input-bordered input-primary w-full max-w-xs"  />
+                            <input type="number" ref={priceRef} placeholder="Type here" class="input input-bordered input-primary w-full max-w-xs" required />
 
                         </div>
 
@@ -114,7 +114,7 @@ const AddProducts = () => {
                                 <span class="label-text">Description</span>
 
                             </label>
-                            <input type="text" ref={descRef} placeholder="Type here" class="input input-bordered input-primary w-full max-w-xs"  />
+                            <input type="text" ref={descRef} placeholder="Type here" class="input input-bordered input-primary w-full max-w-xs" required />
 
                         </div>
 
@@ -123,7 +123,7 @@ const AddProducts = () => {
                                 <span class="label-text">Image</span>
 
                             </label>
-                            <input type="text" ref={imageRef} placeholder="Type here" class="input input-bordered input-primary w-full max-w-xs" />
+                            <input type="text" ref={imageRef} placeholder="Type here" class="input input-bordered input-primary w-full max-w-xs" required />
 
                         </div>
 
