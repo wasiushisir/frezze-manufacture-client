@@ -32,12 +32,13 @@ const Purchase = () => {
     let availableQuantity = product.availableQuantity
     let minimumOrder=product.minimumOrder;
     let price=product.price;
+    let name=product.name;
 
     const input = parseInt(inputRef.current.value);
     quantity = parseInt(quantity)
     quantity = parseInt(quantity + input)
 
-    const updatedQuantity = { quantity, availableQuantity,minimumOrder,price };
+    const updatedQuantity = { quantity, availableQuantity,minimumOrder,price,name };
 
 
     // console.log(output);
@@ -68,17 +69,18 @@ const Purchase = () => {
     let availableQuantity = product.availableQuantity
     let minimumOrder=product.minimumOrder;
     let price=product.price;
+    let productName=product.name;
     const name=nameRef.current.value;
     const email=emailRef.current.value;
     const address=addressRef.current.value;
     const phone=phoneRef.current.value;
     console.log(name,email,address,phone);
-    const order={email,address,phone,price,quantity,availableQuantity,minimumOrder}
+    const order={email,address,phone,price,quantity,availableQuantity,minimumOrder,productName}
     fetch(`http://localhost:5000/order`,{
       method:'POST',
       headers:{
         'content-type':'application/json',
-
+        
       },
       body:JSON.stringify(order)
     })

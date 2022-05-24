@@ -10,6 +10,9 @@ import Purchase from './components/Purchase';
 import RequireAuth from './components/RequireAuth';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Dashboard from './components/Dashboard/Dashboard';
+import MyReview from './components/Dashboard/MyReview';
+import MyOrder from './components/Dashboard/MyOrder';
 
 function App() {
   return (
@@ -21,6 +24,12 @@ function App() {
         <Route path='/signOut' element={<SignOut></SignOut>}></Route>
         <Route path='/registration' element={<SignUp></SignUp>}></Route>
         <Route path='/purchase/:id' element={<RequireAuth><Purchase></Purchase></RequireAuth>}></Route>
+        <Route path='/dashboard' element={<RequireAuth><Dashboard></Dashboard></RequireAuth>}>
+          <Route path='myreview'element={<MyReview></MyReview>}></Route>
+          <Route path='myorder'element={<MyOrder></MyOrder>}></Route>
+
+
+        </Route>
 
       </Routes>
 
