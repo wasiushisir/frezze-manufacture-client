@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useQuery } from 'react-query';
+import { toast } from 'react-toastify';
+import DeleteProductmodal from './DeleteProductmodal';
 
 const ManageProducts = () => {
-    const { data: products, isLoading } = useQuery('products', () =>
+    const [deleteProduct,setDeleteProduct]=useState(null)
+    const { data: products, isLoading,refetch } = useQuery('products', () =>
         fetch('http://localhost:5000/products').then(res =>
             res.json()
         )
@@ -12,6 +15,10 @@ const ManageProducts = () => {
     if (isLoading) {
         return <progress class="progress w-96"></progress>
     }
+
+    
+
+   
 
 
     return (
@@ -37,7 +44,8 @@ const ManageProducts = () => {
                                 </div>
                             </div></td>
                             <td>{product.name}</td>
-                            <td><button className='btn btn-error btn-xs'>Delete</button></td>
+                            <td> <label onClick={()=>setDeleteProduct(product)} for="deletepromodal" class="btn btn-error btn-xs">Delete</label>
+                                </td>
 
                         </tr>)
                     }
@@ -49,6 +57,7 @@ const ManageProducts = () => {
 
                 </tbody>
             </table>
+            {deleteProduct&&<DeleteProductmodal deleteProduct={deleteProduct} refetch={refetch}></DeleteProductmodal>}
         </div>
     );
 };
