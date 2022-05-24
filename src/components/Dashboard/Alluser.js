@@ -29,10 +29,20 @@ const Alluser = () => {
         }
     })
 
-    .then(response=>response.json())
+    .then(response=>{
+        if(response.status===403){
+            toast.error('cant make an admin')
+        }
+       return response.json()})
     .then(data=>{console.log(data)
-        refetch();
-        toast.success('Make an admin successfully')
+       
+        if(data.modifiedCount>0)
+        {
+            refetch();
+            toast.success('Make an admin successfully')
+
+        }
+       
     
     })
 
