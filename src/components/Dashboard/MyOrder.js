@@ -53,7 +53,9 @@ const MyOrder = () => {
                      <label onClick={() => setModal(o)} for="delete-modal" class="btn btn-xs btn-error">Delete</label>}</td>
                      <td>
                         {(o.price&& !o.paid)&&<Link to={`/dashboard/payment/${o._id}`}><button className='btn btn-xs btn-success'>pay</button></Link>}
-                        {(o.price&&o.paid)&& <span className='text-success'>paid</span>}
+                        {(o.price&&o.paid)&& <><p><span className='text-success'>paid</span></p>
+                        <p>Traansaction Id:<span className=''>{o.transactionId}</span></p>
+                        </>}
                         </td>
               </tr>)
         }
