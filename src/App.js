@@ -23,6 +23,7 @@ import Pay from './components/Dashboard/Pay';
 
 import Blogs from './components/Blogs';
 import MyPortfolio from './components/MyPortfolio';
+import NotFound from './components/NotFound';
 
 
 function App() {
@@ -51,6 +52,7 @@ function App() {
 
 
         </Route>
+        <Route path='*'element={<NotFound></NotFound>}></Route>
 
       </Routes>
 

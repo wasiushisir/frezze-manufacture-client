@@ -10,7 +10,7 @@ const Tools = () => {
     },[])
     return (
         <div>
-            <h2 className='text-center text-4xl text-primary font-bold my-28'>Tools :{tools.length}</h2>
+            <h2 className='text-center text-4xl text-primary font-bold my-28'>Tools </h2>
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 '>
                 {
                     tools.map(tool=><Tool key={tool._id} tool={tool}></Tool>)
