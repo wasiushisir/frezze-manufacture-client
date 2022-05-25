@@ -6,8 +6,10 @@ import auth from './Home/firebase.init';
 const Navbar = () => {
   const [user, loading, error] = useAuthState(auth);
   const menuitems=<>
-        <li><a>Item 1</a></li>
+       
        { user&&<li><Link to='/dashboard'>Dashboard</Link></li>}
+       <li><Link to='/blog'>Blog</Link></li>
+       <li><Link to='/portfolio'>My Portfolio</Link></li>
         
         {user?<li><Link to='/signOut'>SignOut</Link></li> :<li><Link to='/login'>Login</Link></li>}
       

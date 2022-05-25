@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useAuthState, } from 'react-firebase-hooks/auth';
+import { Link } from 'react-router-dom';
 import auth from '../Home/firebase.init';
 import DeleteModal from './DeleteModal';
 
@@ -38,6 +39,7 @@ const MyOrder = () => {
         <th>Email</th>
         <th>Product Name</th>
         <th>Button</th>
+        <th>Payment</th>
       </tr>
     </thead>
     <tbody>
@@ -49,6 +51,10 @@ const MyOrder = () => {
                 <td>{o.productName}</td>
                 <td>{
                      <label onClick={() => setModal(o)} for="delete-modal" class="btn btn-xs btn-error">Delete</label>}</td>
+                     <td>
+                        {(o.price&& !o.paid)&&<Link to={`/dashboard/payment/${o._id}`}><button className='btn btn-xs btn-success'>pay</button></Link>}
+                        {(o.price&&o.paid)&& <span className='text-success'>paid</span>}
+                        </td>
               </tr>)
         }
       

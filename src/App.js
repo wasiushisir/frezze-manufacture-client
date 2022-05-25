@@ -18,6 +18,12 @@ import Alluser from './components/Dashboard/Alluser';
 import AddProducts from './components/Dashboard/AddProducts';
 import ManageProducts from './components/Dashboard/ManageProducts';
 import ManageOders from './components/Dashboard/ManageOders';
+import Requireadmin from './components/Requireadmin';
+import Pay from './components/Dashboard/Pay';
+
+import Blogs from './components/Blogs';
+import MyPortfolio from './components/MyPortfolio';
+
 
 function App() {
   return (
@@ -25,6 +31,9 @@ function App() {
       <Navbar></Navbar>
       <Routes>
         <Route path='/'element={<Home></Home>}></Route>
+        <Route path='/blog'element={<Blogs></Blogs>}></Route>
+        <Route path='/portfolio'element={<MyPortfolio></MyPortfolio>}></Route>
+
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signOut' element={<SignOut></SignOut>}></Route>
         <Route path='/registration' element={<SignUp></SignUp>}></Route>
@@ -33,10 +42,12 @@ function App() {
           <Route path='myreview'element={<MyReview></MyReview>}></Route>
           <Route path='myorder'element={<MyOrder></MyOrder>}></Route>
           <Route path='myprofile'element={<MyProfile></MyProfile>}></Route>
-          <Route path='alluser'element={<Alluser></Alluser>}></Route>
-          <Route path='addproduct'element={<AddProducts></AddProducts>}></Route>
-          <Route path='manageproduct'element={<ManageProducts></ManageProducts>}></Route>
-          <Route path='manageorder'element={<ManageOders></ManageOders>}></Route>
+          <Route path='payment/:id'element={<Pay></Pay>}></Route>
+          
+          <Route path='alluser'element={<Requireadmin><Alluser></Alluser></Requireadmin>}></Route>
+          <Route path='addproduct'element={<Requireadmin><AddProducts></AddProducts></Requireadmin>}></Route>
+          <Route path='manageproduct'element={<Requireadmin><ManageProducts></ManageProducts></Requireadmin>}></Route>
+          <Route path='manageorder'element={<Requireadmin><ManageOders></ManageOders></Requireadmin>}></Route>
 
 
         </Route>

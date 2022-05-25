@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 const useAdmin=(user)=>{
     const [admin,setAdmin]=useState(false)
+    const [adminloading,setAdminloading]=useState(true)
     useEffect(()=>{
         const email=user?.email;
         if(email){
@@ -22,6 +23,7 @@ const useAdmin=(user)=>{
                 
                 
                 setAdmin(data.admin);
+                setAdminloading(false)
             
             
             })
@@ -32,6 +34,6 @@ const useAdmin=(user)=>{
     
 
     },[user])
-    return[admin]
+    return[admin,adminloading]
 }
 export default useAdmin;
