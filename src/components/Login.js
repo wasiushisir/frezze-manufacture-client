@@ -130,6 +130,7 @@ const Login = () => {
                         </div>
                         <input className='btn btn-primary w-full max-w-xs my-2' value="Login" type="submit" />
                         <p >New in Sipro?<span><Link className='text-primary no-underline mx-4' to='/registration'>Please SignUp</Link></span></p>
+                        <p className='text-red-500'> {error?.message}</p>
                     </form>
                     <div class="divider">OR</div>
                 <button onClick={()=> signInWithGoogle()}  class="btn btn-outline btn-primary w-full max-w-xs"> <img className='mx-1' style={{width:'25px'}} src={image} alt="" /> google sign</button>

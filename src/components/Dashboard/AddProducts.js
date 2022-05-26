@@ -26,7 +26,7 @@ const AddProducts = () => {
         const img = imageRef.current.value;
         const product={name,img,shortDescription,minimumOrder,quantity,availableQuantity,price}
 
-        fetch('http://localhost:5000/products',{
+        fetch('https://young-wildwood-23609.herokuapp.com/products',{
             method:'POST',
             headers:{'content-type':'application/json'},
             body:JSON.stringify(product)

@@ -9,7 +9,7 @@ const Pay = () => {
     const { id } = useParams();
 
     const { data: orders, isLoading } = useQuery(['orders', id], () =>
-        fetch(`http://localhost:5000/payment/${id}`, {
+        fetch(`https://young-wildwood-23609.herokuapp.com/payment/${id}`, {
             method: 'GET',
             headers: {
                 'authorization': `Bearer ${localStorage.getItem('accessToken')}`

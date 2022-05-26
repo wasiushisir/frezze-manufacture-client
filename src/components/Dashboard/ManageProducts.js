@@ -4,9 +4,9 @@ import { toast } from 'react-toastify';
 import DeleteProductmodal from './DeleteProductmodal';
 
 const ManageProducts = () => {
-    const [deleteProduct,setDeleteProduct]=useState(null)
+    const [deleteProduct,setDeleteProduct]=useState({})
     const { data: products, isLoading,refetch } = useQuery('products', () =>
-        fetch('http://localhost:5000/products').then(res =>
+        fetch('https://young-wildwood-23609.herokuapp.com/products').then(res =>
             res.json()
         )
     )

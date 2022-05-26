@@ -26,7 +26,7 @@ const MyProfile = () => {
         const currentuser={name,email,education,location,phone}
 
         if(email){
-            fetch(`http://localhost:5000/myprofile/${email}`,{
+            fetch(`https://young-wildwood-23609.herokuapp.com/myprofile/${email}`,{
                 method:'PUT',
                 headers:{'content-type':'application/json'},
                 body:JSON.stringify(currentuser)

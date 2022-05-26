@@ -18,7 +18,7 @@ const Purchase = () => {
   }
   const [product, setProduct] = useState({})
   useEffect(() => {
-    fetch(`http://localhost:5000/products/${id}`)
+    fetch(`https://young-wildwood-23609.herokuapp.com/products/${id}`)
       .then(response => response.json())
       .then(data => setProduct(data))
   }, [id])
@@ -42,7 +42,7 @@ const Purchase = () => {
 
 
     // console.log(output);
-    fetch(`http://localhost:5000/productQuantity/${id}`, {
+    fetch(`https://young-wildwood-23609.herokuapp.com/productQuantity/${id}`, {
       method: 'PUT',
       headers: { 'content-type': 'application/json' },
       body: JSON.stringify(updatedQuantity)
@@ -76,7 +76,7 @@ const Purchase = () => {
     const phone=phoneRef.current.value;
     console.log(name,email,address,phone);
     const order={email,address,phone,price,quantity,availableQuantity,minimumOrder,productName}
-    fetch(`http://localhost:5000/order`,{
+    fetch(`https://young-wildwood-23609.herokuapp.com/order`,{
       method:'POST',
       headers:{
         'content-type':'application/json',

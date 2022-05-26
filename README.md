@@ -1,6 +1,11 @@
-# Getting Started with Create React App
+# Frezze Manufacturung parts
+- The website is based on sellig and maintaing manufacture parts in website
+- user can order their product and see their product
+- user added review about the service of website
+- admin can manage user product and order
+- payment method is integated here
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  https://freeze-manufacturing-part.web.app/
 
 ## Available Scripts
 
