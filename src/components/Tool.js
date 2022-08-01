@@ -15,7 +15,7 @@ const Tool = ({tool}) => {
 
 
     return (
-        <div class="card w-96 bg-base-100 shadow-xl sm:text-center">
+        <div class="card max-w-lg bg-base-100 shadow-xl sm:text-center">
   <figure class="px-10 pt-10">
     <img src={img} alt="Shoes" class="rounded-xl" />
   </figure>

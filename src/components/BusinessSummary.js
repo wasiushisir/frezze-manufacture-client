@@ -7,7 +7,7 @@ const BusinessSummary = () => {
         <div>
             <h2 className='text-primary text-center text-4xl font-bold my-28'>Business Summary</h2>
 
-            <div className='grid grid-cols-1 lg:grid-cols-4 gap-3 px-16 sm:text-center'>
+            <div className='grid grid-cols-1 lg:grid-cols-4 gap-3 px-16 text-center'>
 
            
 

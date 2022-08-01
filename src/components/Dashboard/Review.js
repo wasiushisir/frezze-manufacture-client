@@ -12,9 +12,9 @@ const Review = () => {
         
        <div>
            <h2 className='text-center text-primary text-4xl font-bold my-8'>Review</h2>
-            <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 mx-12'>
+            <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 '>
             {
-                reviews.map(review=><div class="card w-96 bg-base-200 shadow-xl">
+                reviews.map(review=><div class="card  bg-base-200 shadow-xl">
                
                 <div class="card-body items-center text-center">
                   <h2 class="card-title">Rating:{review.rating}</h2>
