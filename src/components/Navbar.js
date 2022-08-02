@@ -36,7 +36,7 @@ const Navbar = () => {
         
       </ul>
     </div>
-    <Link to='/' class="btn btn-ghost normal-case text-xl"> <img style={{width:'35px'}} src={icon} alt="" />   Ahmed <span className='text-primary p-2'>Manufacturing</span></Link>
+    <Link to='/' class="btn btn-ghost normal-case text-2xl"> <img style={{width:'35px'}} src={icon} alt="" />   Ahmed <span className='text-primary p-2'>Manufacturing</span></Link>
   </div>
   <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal p-0">
