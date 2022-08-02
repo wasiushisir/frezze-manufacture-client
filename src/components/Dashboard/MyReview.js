@@ -42,7 +42,7 @@ const MyReview = () => {
 
 
 <label class="label">
-  <span class="label-text">Enter Ratings</span>
+  <span class="label-text">Enter Image</span>
 </label>
 <label class="input-group">
   <input ref={retingRef}  type="text" class="input input-bordered" />

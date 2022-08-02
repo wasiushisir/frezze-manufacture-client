@@ -108,8 +108,8 @@ const Purchase = () => {
 
 
   return (
-    <div>
-      <h2>Product id:{id}</h2>
+    <div className='mt-36'>
+     
       <div className='flex justify-center items-center h-screen'>
         <div class="card w-96 bg-base-100 shadow-xl">
           <h4 className='card-body items-center text-center text-xl font-bold'><b>Product Name:</b>{product.name}</h4>

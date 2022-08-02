@@ -157,7 +157,7 @@ const SignUp = () => {
                         <p className='text-red-500'> {error?.message}</p>
                     </form>
                     <div class="divider">OR</div>
-                <button onClick={()=> signInWithGoogle()}  class="btn btn-outline btn-primary w-full max-w-xs"> <img className='mx-1' style={{width:'25px'}} src={image} alt="" /> google sign</button>
+                <button onClick={()=> signInWithGoogle()}  class="btn btn-outline btn-primary w-full max-w-xs"> <img className='mx-1' style={{width:'25px'}} src={image} alt="" /> Google Sign In</button>
                 <p className='text-red-500'> {gError?.message}</p>
 
 

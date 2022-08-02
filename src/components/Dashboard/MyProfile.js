@@ -22,7 +22,7 @@ const MyProfile = () => {
   const email = user?.email;
 
 
-  const { data: profile, isLoading,refetch } = useQuery('profile', () =>
+   const { data: profile, isLoading,refetch } = useQuery(['profile',email], () =>
   fetch(`http://localhost:5000/myprofile/${email}`).then(res =>
       res.json()
   )
@@ -203,10 +203,10 @@ if (isLoading) {
           <div class="card-body items-start text-center">
             
               
-              <h2 class="card-title">Name:{profile.name}</h2>
-            <h2 class="card-title">Education:{profile.education}</h2>
-            <h2 class="card-title">Location:{profile.location}</h2>
-            <h2 class="card-title">Phone No:{profile.phone}</h2>
+           <h2 class="card-title">Name:{profile?.name}</h2>
+            <h2 class="card-title">Education:{profile?.education}</h2>
+            <h2 class="card-title">Location:{profile?.location}</h2>
+            <h2 class="card-title">Phone No:{profile?.phone}</h2> 
               
 
             

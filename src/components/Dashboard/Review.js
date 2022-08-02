@@ -4,7 +4,7 @@ const Review = () => {
 
   const [reviews, setReview] = useState([])
   useEffect(() => {
-    fetch(`https://young-wildwood-23609.herokuapp.com/review`)
+    fetch(`http://localhost:5000/review`)
       .then(response => response.json())
       .then(data => setReview(data))
   }, [])
@@ -17,12 +17,17 @@ const Review = () => {
           reviews.map(review => <div class="card  bg-base-200 shadow-xl">
 
             <div class="card-body items-center text-center">
+              <div class="avatar">
+                <div class="w-24 rounded-full">
+                  <img src={review.rating} />
+                </div>
+              </div>
               {/* <h2 class="card-title">Rating:{review.rating}</h2> */}
               <p>{review.review}</p>
               <div class="rating">
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400  " checked  />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400  " checked />
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
               </div>
