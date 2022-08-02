@@ -1,7 +1,10 @@
 import React from 'react';
+import { useState } from 'react';
 import { Link, Navigate, useNavigate } from 'react-router-dom';
 
 const Tool = ({tool}) => {
+  
+  
   const naviagte=useNavigate();
     // console.log(tool);
     const{img,name,shortDescription,minimumOrder,quantity,availableQuantity,price,_id}=tool
@@ -13,9 +16,14 @@ const Tool = ({tool}) => {
     }
 
 
+    // if (isLoading) {
+    //   return <progress class="progress w-96"></progress>
+    // }
+
+
 
     return (
-        <div class="card  bg-base-100 shadow-xl sm:text-center  hover:scale-110 transition-all duration-300  ">
+        <div class="card  bg-base-100 shadow-xl sm:text-center   hover:scale-110 transition-all duration-300  ">
   <figure class="px-10 pt-10">
     <img src={img} alt="Shoes" class="rounded-xl w-16 md:w-32 lg:w-48" />
   </figure>
@@ -30,8 +38,11 @@ const Tool = ({tool}) => {
     <p><b>Description:</b>{shortDescription}</p>
     <div class="card-actions">
       <button onClick={()=>handleBuy(_id)} class="btn btn-primary">Buy Now</button>
+      
     </div>
+   
   </div>
+  
 </div>
     );
 };
