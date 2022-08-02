@@ -100,7 +100,7 @@ if (isLoading) {
 
 
   return (
-    <div className='flex justify-evenly items-center h-screen'>
+    <div className='flex justify-evenly items-center h-screen mt-11'>
 
       
 
