@@ -6,10 +6,12 @@ import auth from './Home/firebase.init';
 const Navbar = () => {
   const [user, loading, error] = useAuthState(auth);
   const menuitems=<>
-       
+        
+        <li><Link to='/'>Home</Link></li>
        { user&&<li><Link to='/dashboard'>Dashboard</Link></li>}
        <li><Link to='/blog'>Blog</Link></li>
        <li><Link to='/portfolio'>My Portfolio</Link></li>
+       <li><a href='#tools'>Tools</a></li>
         
         {user?<li><Link to='/signOut'>SignOut</Link></li> :<li><Link to='/login'>Login</Link></li>}
       
@@ -33,7 +35,7 @@ const Navbar = () => {
         
       </ul>
     </div>
-    <Link to='/' class="btn btn-ghost normal-case text-xl">Ahmed Manufacturin</Link>
+    <Link to='/' class="btn btn-ghost normal-case text-xl">Ahmed Manufacturing</Link>
   </div>
   <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal p-0">

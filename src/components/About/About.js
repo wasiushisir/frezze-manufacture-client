@@ -16,7 +16,7 @@ const About = () => {
 </div>
 
 
-<div class="hero min-h-screen ">
+{/* <div class="hero min-h-screen ">
   <div class="hero-content flex-col lg:flex-row-reverse">
     <img src="https://images.unsplash.com/photo-1530939027401-cca9976c77f7?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fG1hbnVmYWN0dXJpbmclMjBpbmR1c3RyeXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500" />
     <div>
@@ -25,10 +25,10 @@ const About = () => {
       <button class="btn btn-primary">Get Started</button>
     </div>
   </div>
-</div>
+</div> */}
 
 
-<div class="hero min-h-screen">
+{/* <div class="hero min-h-screen">
   <div class="hero-content flex-col lg:flex-row">
     <img src="https://images.unsplash.com/photo-1530939069691-adb779735408?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fG1hbnVmYWN0dXJpbmclMjBpbmR1c3RyeXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500" />
     <div>
@@ -37,7 +37,7 @@ const About = () => {
       <button class="btn btn-primary">Get Started</button>
     </div>
   </div>
-</div>
+</div> */}
 
 
             
