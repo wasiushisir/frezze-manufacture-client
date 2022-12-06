@@ -23,7 +23,7 @@ const MyProfile = () => {
 
 
    const { data: profile, isLoading,refetch } = useQuery(['profile',email], () =>
-  fetch(`http://localhost:5000/myprofile/${email}`).then(res =>
+  fetch(`https://mysterious-harbor-13303.herokuapp.com/myprofile/${email}`).then(res =>
       res.json()
   )
 )
@@ -55,7 +55,7 @@ if (isLoading) {
     const currentuser = { name, email, education, location, phone }
 
     if (email) {
-      fetch(`https://young-wildwood-23609.herokuapp.com/myprofile/${email}`, {
+      fetch(`https://mysterious-harbor-13303.herokuapp.com/myprofile/${email}`, {
         method: 'PUT',
         headers: { 'content-type': 'application/json' },
         body: JSON.stringify(currentuser)
