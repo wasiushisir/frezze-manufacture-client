@@ -5,7 +5,7 @@ const useAdmin=(user)=>{
     useEffect(()=>{
         const email=user?.email;
         if(email){
-            fetch(`https://young-wildwood-23609.herokuapp.com/admin/${email}`,{
+            fetch(`https://freze-manufacture-server-production.up.railway.app/admin/${email}`,{
     
                 method:'GET',
                 headers:{

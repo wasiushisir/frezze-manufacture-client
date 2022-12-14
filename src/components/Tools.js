@@ -5,7 +5,7 @@ const Tools = () => {
     const [tools,setTools]=useState([])
     
     useEffect(()=>{
-        fetch('https://young-wildwood-23609.herokuapp.com/products')
+        fetch('https://freze-manufacture-server-production.up.railway.app/products')
         .then(response=>response.json())
         .then(data=>setTools(data))
        

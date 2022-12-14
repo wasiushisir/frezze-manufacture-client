@@ -8,7 +8,7 @@ const DeleteModal = ({o,order,setOrder}) => {
 
     const handleDelte=(id)=>{
 
-        fetch(`https://young-wildwood-23609.herokuapp.com/deleteorder/${id}`,{
+        fetch(`https://freze-manufacture-server-production.up.railway.app/deleteorder/${id}`,{
             method:'DELETE'
         })
         .then(response=>response.json())

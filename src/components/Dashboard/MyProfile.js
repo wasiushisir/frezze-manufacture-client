@@ -17,13 +17,13 @@ const MyProfile = () => {
   const eduRef = useRef();
   const locaRef = useRef()
   const phoneRef = useRef();
-  const [user, loading, error] = useAuthState(auth);
+  const [user, loading] = useAuthState(auth);
 
   const email = user?.email;
 
 
    const { data: profile, isLoading,refetch } = useQuery(['profile',email], () =>
-  fetch(`https://mysterious-harbor-13303.herokuapp.com/myprofile/${email}`).then(res =>
+  fetch(`https://freze-manufacture-server-production.up.railway.app/myprofile/${email}`).then(res =>
       res.json()
   )
 )
@@ -55,7 +55,7 @@ if (isLoading) {
     const currentuser = { name, email, education, location, phone }
 
     if (email) {
-      fetch(`https://mysterious-harbor-13303.herokuapp.com/myprofile/${email}`, {
+      fetch(`https://freze-manufacture-server-production.up.railway.app/myprofile/${email}`, {
         method: 'PUT',
         headers: { 'content-type': 'application/json' },
         body: JSON.stringify(currentuser)

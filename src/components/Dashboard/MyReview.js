@@ -12,7 +12,7 @@ const MyReview = () => {
         const review=reviewRef.current.value;
         console.log(rating,review);
         const userReview={rating,review}
-        fetch(`https://young-wildwood-23609.herokuapp.com/review`,{
+        fetch(`https://freze-manufacture-server-production.up.railway.app/review`,{
             method:'POST',
             headers:{
                 'content-type':'application/json'

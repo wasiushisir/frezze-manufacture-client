@@ -8,7 +8,7 @@ const useToken=(user)=>{
         const currentUser={email}
     
         if(email){
-            fetch(`https://young-wildwood-23609.herokuapp.com/user/${email}`,{
+            fetch(`https://freze-manufacture-server-production.up.railway.app/user/${email}`,{
     
                 method:'PUT',
                 headers:{

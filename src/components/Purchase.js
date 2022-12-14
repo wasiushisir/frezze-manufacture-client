@@ -18,7 +18,7 @@ const Purchase = () => {
   }
   const [product, setProduct] = useState({})
   useEffect(() => {
-    fetch(`https://young-wildwood-23609.herokuapp.com/products/${id}`)
+    fetch(`https://freze-manufacture-server-production.up.railway.app/products/${id}`)
       .then(response => response.json())
       .then(data => setProduct(data))
   }, [id])
@@ -42,7 +42,7 @@ const Purchase = () => {
 
 
     // console.log(output);
-    fetch(`https://young-wildwood-23609.herokuapp.com/productQuantity/${id}`, {
+    fetch(`https://freze-manufacture-server-production.up.railway.app/productQuantity/${id}`, {
       method: 'PUT',
       headers: { 'content-type': 'application/json' },
       body: JSON.stringify(updatedQuantity)
@@ -76,7 +76,7 @@ const Purchase = () => {
     const phone=phoneRef.current.value;
     console.log(name,email,address,phone);
     const order={email,address,phone,price,quantity,availableQuantity,minimumOrder,productName}
-    fetch(`https://young-wildwood-23609.herokuapp.com/order`,{
+    fetch(`https://freze-manufacture-server-production.up.railway.app/order`,{
       method:'POST',
       headers:{
         'content-type':'application/json',

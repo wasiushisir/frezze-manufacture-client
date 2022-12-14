@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 const Alluser = () => {
 
     const { data:users, isLoading, refetch} = useQuery('users', () =>
-    fetch('https://young-wildwood-23609.herokuapp.com/user',{
+    fetch('https://freze-manufacture-server-production.up.railway.app/user',{
         method:'GET',
         headers:{
             'authorization':`Bearer ${localStorage.getItem('accessToken')}`
@@ -22,7 +22,7 @@ const Alluser = () => {
 
   const makeadmin=(email)=>{
 
-    fetch(`https://young-wildwood-23609.herokuapp.com/user/admin/${email}`,{
+    fetch(`https://freze-manufacture-server-production.up.railway.app/user/admin/${email}`,{
         method:'PUT',
         headers:{
             'authorization':`Bearer ${localStorage.getItem('accessToken')}`

@@ -26,7 +26,7 @@ const AddProducts = () => {
         const img = imageRef.current.value;
         const product={name,img,shortDescription,minimumOrder,quantity,availableQuantity,price}
 
-        fetch('https://young-wildwood-23609.herokuapp.com/products',{
+        fetch('https://freze-manufacture-server-production.up.railway.app/products',{
             method:'POST',
             headers:{'content-type':'application/json'},
             body:JSON.stringify(product)

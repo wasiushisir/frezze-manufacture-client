@@ -12,7 +12,7 @@ const CheckoutForm = ({ orders }) => {
     const { price, email, address,_id } = orders
 
     useEffect(() => {
-        fetch('https://young-wildwood-23609.herokuapp.com/create-payment-intent', {
+        fetch('https://freze-manufacture-server-production.up.railway.app/create-payment-intent', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
@@ -90,7 +90,7 @@ const CheckoutForm = ({ orders }) => {
                 order: _id,
                 transactionId: paymentIntent.id
             }
-            fetch(`https://young-wildwood-23609.herokuapp.com/order/${_id}`, {
+            fetch(`https://freze-manufacture-server-production.up.railway.app/order/${_id}`, {
                 method: 'PATCH',
                 headers: {
                     'content-type': 'application/json',

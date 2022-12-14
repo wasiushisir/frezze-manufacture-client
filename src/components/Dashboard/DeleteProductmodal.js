@@ -5,7 +5,7 @@ const DeleteProductmodal = ({deleteProduct,refetch}) => {
     const{_id,name}=deleteProduct;
 
     const deleteproduct=(id)=>{
-        fetch(`https://young-wildwood-23609.herokuapp.com/pro/${id}`,{
+        fetch(`https://freze-manufacture-server-production.up.railway.app/pro/${id}`,{
             method:'DELETE',
          })
 

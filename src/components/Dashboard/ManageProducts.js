@@ -6,7 +6,7 @@ import DeleteProductmodal from './DeleteProductmodal';
 const ManageProducts = () => {
     const [deleteProduct,setDeleteProduct]=useState({})
     const { data: products, isLoading,refetch } = useQuery('products', () =>
-        fetch('https://young-wildwood-23609.herokuapp.com/products').then(res =>
+        fetch('https://freze-manufacture-server-production.up.railway.app/products').then(res =>
             res.json()
         )
     )
